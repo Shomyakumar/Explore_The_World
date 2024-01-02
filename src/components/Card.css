@@ -1,0 +1,13 @@
+
+.card-bg{
+    background: rgb(5,0,82);
+background: linear-gradient(180deg, rgba(5,0,82,1) 0%, rgba(32,32,133,1) 49%, rgba(0,135,242,1) 100%);
+}
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+
+
+.name{
+    font-family: 'Noto Sans', sans-serif;
+}

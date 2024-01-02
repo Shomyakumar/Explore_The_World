@@ -1,0 +1,23 @@
+
+.plane-bg{
+    background-image: url('../assets/plane-1.jpg');
+   
+}
+
+.shadow{
+    box-shadow: 0 0 5px #E3FDFD;
+}
+.drop-shadow{
+    filter:drop-shadow(0 0 3px #E3FDFD);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+.shadow-text{
+    font-family: 'Lora', serif;
+}
+.nav-bg{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 52%, rgba(0,212,255,1) 100%);
+}
