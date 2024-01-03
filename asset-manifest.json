@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Explore_The_World/static/css/main.90099e6c.css",
-    "main.js": "/Explore_The_World/static/js/main.bdc41c48.js",
+    "main.js": "/Explore_The_World/static/js/main.42df474c.js",
     "static/media/plane-1.jpg": "/Explore_The_World/static/media/plane-1.73613866fb1d40271080.jpg",
     "static/media/contact.png": "/Explore_The_World/static/media/contact.c0dd9f474347fb26307c.png",
     "static/media/about.png": "/Explore_The_World/static/media/about.7a032b76da0d6d598b9e.png",
@@ -13,10 +13,10 @@
     "static/media/wave-haikei (2).svg": "/Explore_The_World/static/media/wave-haikei (2).4a4a565c7760a11922c1395ebbb923b1.svg",
     "index.html": "/Explore_The_World/index.html",
     "main.90099e6c.css.map": "/Explore_The_World/static/css/main.90099e6c.css.map",
-    "main.bdc41c48.js.map": "/Explore_The_World/static/js/main.bdc41c48.js.map"
+    "main.42df474c.js.map": "/Explore_The_World/static/js/main.42df474c.js.map"
   },
   "entrypoints": [
     "static/css/main.90099e6c.css",
-    "static/js/main.bdc41c48.js"
+    "static/js/main.42df474c.js"
   ]
 }
