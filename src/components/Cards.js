@@ -11,8 +11,8 @@ const Cards=forwardRef((props, refr) => {
 
     return(
         <div className="bg-sky-100">
-            <div className="max-w-[1200px] mx-auto pt-[5rem]">
-                <div className="flex flex-col items-center gap-6 p-6">
+            <div className="max-w-[1200px] mx-auto pt-[4rem] pb-12">
+                <div className="flex flex-col items-center gap-6 px-8 sm:px-12">
                     <p className="text-[rgba(9,9,121,1)] text-[2.5rem] font-semibold style-text text-center hidden sm:block">Join us on a journey to discover stunning destinations in India and beyond.</p>
                     <p className="text-[rgba(9,9,121,1)] text-[2rem] font-semibold style-text text-center sm:hidden">Explore beautiful destinations in India and beyond.</p>
                     <div className="nav-bg h-1 w-[8rem] "></div>

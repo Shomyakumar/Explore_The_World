@@ -16,7 +16,7 @@ export default function Card(props){
                     <p className="text-white font-mono text-2xl font-semibold name">{name}</p>
                     <p className="text-sky-200  my-4">{info}</p>
 
-                    <button className="px-10 py-3 text-blue-90 bg-sky-100 text-blue-950 
+                    <button className="px-10 py-3 text-blue-90 bg-sky-50 text-blue-950 
                     font-semibold rounded-md absolute bottom-4 hover:bg-sky-200">Explore</button>
                 </div>
             </div>
