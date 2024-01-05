@@ -19,9 +19,9 @@ export default function Navbar(){
                 </div>
                 <div className="hidden md:flex flex-1 justify-end" >
                     <ul className="flex items-center text-white font-semibold text-lg justify-between w-[55%] md:w-[40%] ">
-                        <li className="hover:text-cyan-200 pb-2 border-b-2 border-transparent hover:border-cyan-200"><Link to="/">Home</Link></li>
-                        <li className="hover:text-cyan-200 pb-2 border-b-2 border-transparent hover:border-cyan-200"><Link to="/about">About</Link></li>
-                        <li className="hover:text-cyan-200 pb-2 border-b-2 border-transparent hover:border-cyan-200"><Link to="/contact">Contact</Link></li>
+                        <li className="hover:text-cyan-200 pb-2 border-b-2 border-transparent hover:border-cyan-200"><Link to="/Explore_The_World">Home</Link></li>
+                        <li className="hover:text-cyan-200 pb-2 border-b-2 border-transparent hover:border-cyan-200"><Link to="/Explore_The_World/about">About</Link></li>
+                        <li className="hover:text-cyan-200 pb-2 border-b-2 border-transparent hover:border-cyan-200"><Link to="/Explore_The_World/contact">Contact</Link></li>
                     </ul>
                 </div>
         
