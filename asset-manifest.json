@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Explore_The_World/static/css/main.90099e6c.css",
-    "main.js": "/Explore_The_World/static/js/main.e8b1adcf.js",
+    "main.css": "/Explore_The_World/static/css/main.085afde5.css",
+    "main.js": "/Explore_The_World/static/js/main.0b086349.js",
     "static/media/plane-1.jpg": "/Explore_The_World/static/media/plane-1.73613866fb1d40271080.jpg",
     "static/media/contact.png": "/Explore_The_World/static/media/contact.c0dd9f474347fb26307c.png",
     "static/media/about.png": "/Explore_The_World/static/media/about.7a032b76da0d6d598b9e.png",
@@ -12,11 +12,11 @@
     "static/media/linkedIn.png": "/Explore_The_World/static/media/linkedIn.f249b38224ca41a0b909.png",
     "static/media/wave-haikei (2).svg": "/Explore_The_World/static/media/wave-haikei (2).4a4a565c7760a11922c1395ebbb923b1.svg",
     "index.html": "/Explore_The_World/index.html",
-    "main.90099e6c.css.map": "/Explore_The_World/static/css/main.90099e6c.css.map",
-    "main.e8b1adcf.js.map": "/Explore_The_World/static/js/main.e8b1adcf.js.map"
+    "main.085afde5.css.map": "/Explore_The_World/static/css/main.085afde5.css.map",
+    "main.0b086349.js.map": "/Explore_The_World/static/js/main.0b086349.js.map"
   },
   "entrypoints": [
-    "static/css/main.90099e6c.css",
-    "static/js/main.e8b1adcf.js"
+    "static/css/main.085afde5.css",
+    "static/js/main.0b086349.js"
   ]
 }
