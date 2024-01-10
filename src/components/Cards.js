@@ -7,8 +7,17 @@ const Cards=forwardRef((props, refr) => {
 
     const toursdata=props.toursdata;
     const [location,setLocation]=useState("India");
-    const cardsData=toursdata[location];
+    // const cardsData=toursdata[location];
 
+    const [cardsData,setCardsData]=useState(toursdata.India);
+
+    function clickHandler(location){
+        setLocation(location);
+        setCardsData(toursdata[location]);
+    }
+    function removeCard(id){
+        setCardsData(cardsData.filter(data=>data.id!==id))
+    }
     return(
         <div className="bg-sky-100">
             <div className="max-w-[1200px] mx-auto pt-[4rem] pb-12">
@@ -22,12 +31,12 @@ const Cards=forwardRef((props, refr) => {
                 </div>
 
                 <div ref={refr} className="flex items-center justify-center sm:gap-6 gap-4 my-6">
-                    <button onClick={() => setLocation("India")}
+                    <button onClick={()=>{clickHandler("India")}}
                         className={`px-8 sm:px-12 py-4 bg-[#040A54] rounded-lg 
                         ${location === "India" ? "outline outline-offset-4 outline-blue-950" : ""} 
                     hover:bg-[#040A69] text-white text-xl hover:shadow-md hover:shadow-blue-700 font-semibold`}>India
                     </button>
-                    <button onClick={() => setLocation("Foreign")}
+                    <button onClick={()=>{clickHandler("Foreign")}}
                         className={`px-8 sm:px-10 py-4 bg-[#040A54] rounded-lg 
                         ${location === "Foreign" ? "outline outline-offset-4 outline-blue-950" : ""} 
                     hover:bg-[#040A69] text-white text-xl hover:shadow-md hover:shadow-blue-700 font-semibold`}>Foreign
@@ -36,7 +45,7 @@ const Cards=forwardRef((props, refr) => {
                 </div>
                 <div  className="p-[2rem] flex flex-wrap justify-center items-stretch gap-8">
                 {
-                    cardsData.map((data)=><Card data={data} key={data.id}/>)
+                    cardsData.map((data)=><Card data={data} key={data.id} removeCard={removeCard}/>)
                 }
                 </div>
             </div>

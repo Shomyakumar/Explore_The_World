@@ -4,6 +4,7 @@ export default function Card(props){
     let image=props.data.image;
     let name=props.data.name;
     let info=props.data.info;
+    const removeCard=props.removeCard;
     console.log(name);
     return(
         <div className="flex">
@@ -17,7 +18,7 @@ export default function Card(props){
                     <p className="text-sky-200  my-4">{info}</p>
 
                     <button className="px-10 py-3 text-blue-90 bg-sky-50 text-blue-950 
-                    font-semibold rounded-md absolute bottom-4 hover:bg-sky-200">Explore</button>
+                    font-semibold rounded-md absolute bottom-4 hover:bg-sky-200" onClick={()=>{removeCard(props.data.id)}}>Skip</button>
                 </div>
             </div>
             
