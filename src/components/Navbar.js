@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Logo from "../assets/logo2.png"
 import { useState } from "react";
-import { Twirl  } from 'hamburger-react'
+import { RxHamburgerMenu } from "react-icons/rx";
+import { AiOutlineClose } from "react-icons/ai";
 export default function Navbar(){
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -9,7 +10,13 @@ export default function Navbar(){
       setMobileMenuOpen(!isMobileMenuOpen);
       
     };
-    
+    const navigate=useNavigate();
+    function clickHandler(path){
+        toggleMobileMenu();
+        navigate(path);
+        console.log("clicked",path);
+
+    }
 
     return(
         <div className="bg-[#101841] ">
@@ -26,18 +33,27 @@ export default function Navbar(){
                 </div>
         
                 {/* hanburger button */}
-                <div className="md:hidden z-10">
-                   <button onClick={toggleMobileMenu}> <Twirl color={isMobileMenuOpen?" rgb(23 37 84)":"#FFFFFF"} /></button>
+                <div className="md:hidden ">
+                    {
+                        !isMobileMenuOpen&&
+                        <button onClick={toggleMobileMenu}><RxHamburgerMenu className="text-white text-2xl" /> </button>
+                    } 
                  </div>
                 {
                     isMobileMenuOpen&&(
-                        <div className="md:hidden absolute top-0 -z-5 right-0 px-6 pt-[60px] py-4 bg-sky-50 rounded-lg">
-                    
-                            <ul className="flex flex-col text-cyan-600 font-semibold text-lg ">
-                                <li><Link to="/" className="py-2 px-2">Home</Link></li>
-                                <li><Link to="/about" className="py-2 px-2">About</Link></li>
-                                <li><Link to="/contact" className="py-2 px-2">Contact</Link></li>
-                            </ul>
+                        <div className="md:hidden  flex flex-col items-end ">
+                            <button onClick={toggleMobileMenu} className="text-white text-xl w-full flex justify-end" ><AiOutlineClose /></button>
+                            <div className="flex flex-col">
+                                <button onClick={()=>{clickHandler("/")}} className="text-white text-lg  font-semibold">
+                                    Home
+                                </button>
+                                <button onClick={()=>{clickHandler("/about")}} className="text-white text-lg font-semibold" >
+                                    About
+                                </button>
+                                <button onClick={()=>{clickHandler("/contact")}} className="text-white text-lg font-semibold" >
+                                    Contact
+                                </button>
+                            </div>
                         </div>
                     )
                 }

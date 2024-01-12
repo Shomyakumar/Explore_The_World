@@ -5,7 +5,7 @@ export default function Card(props){
     let name=props.data.name;
     let info=props.data.info;
     const removeCard=props.removeCard;
-    console.log(name);
+    
     return(
         <div className="flex">
             <div className=" relative max-w-[350px] bg-blue-950 p- items-stretch rounded-md flex-1  flex-col
