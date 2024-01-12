@@ -1,5 +1,5 @@
 
-import about from "../assets/about.png"
+import about from "../assets/about1.png"
 export default function Details(){
     return(
         <div className="bg-sky-100">
@@ -22,7 +22,7 @@ export default function Details(){
                     </p>
                 </div>
                 <div className="p-2  " >
-                  <img src={about} alt="about" className=" min-w-[300px]"/>
+                  <img src={about} alt="about" className=" min-w-[300px]" loading="lazy"/>
                 </div>
             </div>
         </div>

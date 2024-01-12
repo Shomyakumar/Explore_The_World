@@ -7,7 +7,7 @@ export default function Navbar(){
 
     const toggleMobileMenu = () => {
       setMobileMenuOpen(!isMobileMenuOpen);
-      console.log(isMobileMenuOpen);
+      
     };
     
 
@@ -27,16 +27,16 @@ export default function Navbar(){
         
                 {/* hanburger button */}
                 <div className="md:hidden z-10">
-                   <button onClick={toggleMobileMenu}> <Twirl color="#00ACC1" /></button>
+                   <button onClick={toggleMobileMenu}> <Twirl color={isMobileMenuOpen?" rgb(23 37 84)":"#FFFFFF"} /></button>
                  </div>
                 {
                     isMobileMenuOpen&&(
                         <div className="md:hidden absolute top-0 -z-5 right-0 px-6 pt-[60px] py-4 bg-sky-50 rounded-lg">
                     
                             <ul className="flex flex-col text-cyan-600 font-semibold text-lg ">
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/about">About</Link></li>
-                                <li><Link to="/contact">Contact</Link></li>
+                                <li><Link to="/" className="py-2 px-2">Home</Link></li>
+                                <li><Link to="/about" className="py-2 px-2">About</Link></li>
+                                <li><Link to="/contact" className="py-2 px-2">Contact</Link></li>
                             </ul>
                         </div>
                     )

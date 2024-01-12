@@ -36,7 +36,7 @@ function Contact() {
                         <p className='text-2xl text-sky-100 font-semibold mb-4'>Ask your query</p>
                         <form onSubmit={submitHandler} className='flex gap-3 flex-col items-start'>
                            <label className='flex flex-col  w-full max-w-[400px]'><p className='text-sky-400 italic font-semibold'>
-                            Name <sup className='text-red-500 text-[0.3rem]'>★</sup></p>
+                            Name <sup className='text-red-500 text-[0.5rem]'>*</sup></p>
                                 <input type="text" name="Name" onChange={changeHandler} value={formData.Name}
                                     required placeholder='Enter name'
                                     className='px-2 rounded py- w-full text-blue-950 text-lg font-semibold 
@@ -44,7 +44,7 @@ function Contact() {
                                 />
                            </label> 
                            <label className='flex flex-col  w-full max-w-[400px]'><p className='text-sky-400 italic font-semibold'>
-                            Email <sup className='text-red-500 text-[0.3rem]'>★</sup></p>
+                            Email <sup className='text-red-500 text-[0.5rem]'>*</sup></p>
                                 <input type="email" name="email" onChange={changeHandler} value={formData.email}
                                     required placeholder='Enter email address'
                                     className='px-2 rounded py- w-full text-blue-950 text-lg font-semibold 
@@ -52,7 +52,7 @@ function Contact() {
                                 />
                            </label> 
                            <label className='flex flex-col  w-full max-w-[400px]'><p className='text-sky-400 italic font-semibold'>
-                            Contact <sup className='text-red-500 text-[0.3rem]'>★</sup></p>
+                            Contact <sup className='text-red-500 text-[0.5rem]'>*</sup></p>
                                 <input type="number" name="contact" onChange={changeHandler} value={formData.contact}
                                     required placeholder='Enter contact no'
                                     className='px-2 rounded py- w-full text-blue-950 text-lg font-semibold 
@@ -60,21 +60,21 @@ function Contact() {
                                 />
                            </label> 
                            <label className='flex flex-col  w-full max-w-[400px]'><p className='text-sky-400 italic font-semibold'>
-                            Your query <sup className='text-red-500 text-[0.3rem]'>★</sup></p>
+                            Your query <sup className='text-red-500 text-[0.5rem]'>*</sup></p>
                                 <input type="text" name="query" onChange={changeHandler} value={formData.query}
                                     required placeholder='Enter your query'
-                                    className='px-2 rounded py- w-full text-blue-950 text-lg font-semibold 
+                                    className='px-2 rounded py- w-full h-10 text-blue-950 text-lg font-semibold 
                                     focus:outline-offset-1 focus:outline focus:outline-sky-400'
                                 />
                            </label> 
-            
+                          
                            <button type="submit" className='px-10 py-3 my-3 rounded-md text-blue-950 bg-white font-semibold hover:bg-sky-100'>
                             Submit</button> 
                         </form>
                     </div>
                 </div>
                 <div className=' max-w-[600px]'>
-                    <img src={contact} alt="contact" className=' md:w-[300px] lg:w-[400px] xl:w-[600px] object-contain'/>
+                    <img src={contact} alt="contact" className=' md:w-[300px] lg:w-[400px] xl:w-[600px] object-contain' loading='lazy'/>
                 </div>
             </div>
         <Footer/>
