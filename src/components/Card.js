@@ -1,4 +1,5 @@
 import "./Card.css"
+import Button from "./Button";
 
 export default function Card(props){
     let image=props.data.image;
@@ -18,7 +19,7 @@ export default function Card(props){
                     <p className="text-sky-200  my-4">{info}</p>
 
                     <button className="px-10 py-3 text-blue-90 bg-sky-50 text-blue-950 
-                    font-semibold rounded-md absolute bottom-4 hover:bg-sky-200" onClick={()=>{removeCard(props.data.id)}}>Skip</button>
+                    font-semibold text-lg rounded-md absolute bottom-4 hover:bg-sky-200" >Skip</button>
                 </div>
             </div>
             
