@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/Explore_The_World/static/css/main.0496f46d.css",
-    "main.js": "/Explore_The_World/static/js/main.66d16058.js",
+    "main.css": "/Explore_The_World/static/css/main.6e1fb4c2.css",
+    "main.js": "/Explore_The_World/static/js/main.61133ed1.js",
     "static/media/about1.png": "/Explore_The_World/static/media/about1.5f6698a2c57382bc0ef7.png",
     "static/media/plane-1.jpg": "/Explore_The_World/static/media/plane-1.73613866fb1d40271080.jpg",
     "static/media/contact.png": "/Explore_The_World/static/media/contact.c0dd9f474347fb26307c.png",
+    "static/media/login.png": "/Explore_The_World/static/media/login.9d1c102f73b3ee74cd63.png",
+    "static/media/signup.png": "/Explore_The_World/static/media/signup.ca675f3bf6a92f4da58e.png",
     "static/media/insta.png": "/Explore_The_World/static/media/insta.e719d8b29f452a16302d.png",
     "static/media/logo2.png": "/Explore_The_World/static/media/logo2.a8399fa27e06d3764c51.png",
     "static/media/github.png": "/Explore_The_World/static/media/github.553c66159c5672f25df6.png",
@@ -12,11 +14,11 @@
     "static/media/linkedIn.png": "/Explore_The_World/static/media/linkedIn.f249b38224ca41a0b909.png",
     "static/media/wave-haikei (2).svg": "/Explore_The_World/static/media/wave-haikei (2).4a4a565c7760a11922c1395ebbb923b1.svg",
     "index.html": "/Explore_The_World/index.html",
-    "main.0496f46d.css.map": "/Explore_The_World/static/css/main.0496f46d.css.map",
-    "main.66d16058.js.map": "/Explore_The_World/static/js/main.66d16058.js.map"
+    "main.6e1fb4c2.css.map": "/Explore_The_World/static/css/main.6e1fb4c2.css.map",
+    "main.61133ed1.js.map": "/Explore_The_World/static/js/main.61133ed1.js.map"
   },
   "entrypoints": [
-    "static/css/main.0496f46d.css",
-    "static/js/main.66d16058.js"
+    "static/css/main.6e1fb4c2.css",
+    "static/js/main.61133ed1.js"
   ]
 }
