@@ -4,3 +4,24 @@
 .style-text{
     font-family: 'Lora', serif;
 }
+
+.login-bg{
+    background-image: url("https://img.freepik.com/free-photo/vertical-shot-snowy-hill-near-mountain-blue-sky_181624-2155.jpg?t=st=1705400049~exp=1705400649~hmac=e8cfeddd09e2dfd37b66a0d2e4db5225313acbdd74ca1e79a31eeb31cde3436f");
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+}
+
+.loginpage-bg{
+    background-image: url("https://img.freepik.com/free-photo/snowy-mountains-cloudy-sky_181624-2590.jpg?w=900&t=st=1705400728~exp=1705401328~hmac=405ef0c7f50dba754d1494348c24c9b9402a346f0b38937d6745cf29bb627b20");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Poppins:wght@400;500;600&display=swap');
+
+
+.login-text{
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}

@@ -4,8 +4,10 @@ import Button from "./Button";
 import { useState,useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
+import toast from "react-hot-toast";
 export default function Navbar(props){
     const loggedIn=props.loggedIn;
+    const setLoggedIn=props.setLoggedIn;
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const toggleMobileMenu = () => {
@@ -19,7 +21,12 @@ export default function Navbar(props){
         console.log("clicked",path);
 
     }
-
+    function logoutHandler(){
+        toast.success("Logged out successfully");
+        setLoggedIn(false);
+        console.log(loggedIn);
+        navigate("/");
+    }
         const [isScrolled, setIsScrolled] = useState(false);
         useEffect(() => {
             const handleScroll = () => {
@@ -56,15 +63,17 @@ export default function Navbar(props){
                     <div className="flex gap-4">
                         {
                             !loggedIn&&
-                            <Link to="/login"><Button text="Log in" x="5" y="2"/></Link>
+                            <Link to="/login"><Button text="Log in" x="4" y="2"/></Link>
                         }
                         {
                             !loggedIn&&
-                            <Link to="/login"><Button text="Sign up"  x="5" y="2"/></Link>
+                            <Link to="/signup"><Button text="Sign up"  x="4" y="2"/></Link>
                         }
                         {
                             loggedIn&&
-                            <Link to="/login"><Button text="Log out"  x="5" y="2"/></Link>
+                            <div onClick={logoutHandler}>
+                            <Button text="Log out"  x="4" y="2" />
+                            </div>
                         }
 
                     </div>
@@ -106,8 +115,8 @@ export default function Navbar(props){
                                 </button>
                             }
                             {
-                                !loggedIn &&
-                                <button onClick={()=>{clickHandler("/")}} className="text-white text-lg font-semibold" >
+                                loggedIn &&
+                                <button onClick={logoutHandler} className="text-white text-lg font-semibold" >
                                     Log out
                                 </button>
                             }

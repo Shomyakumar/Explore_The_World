@@ -5,7 +5,7 @@ import React from 'react'
 
 function About() {
     return (
-        <div>
+        <div >
             <Details/>
             <Footer/>
         </div>

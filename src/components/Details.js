@@ -2,7 +2,7 @@
 import about from "../assets/about1.png"
 export default function Details(){
     return(
-        <div className="bg-sky-100">
+        <div className="bg-sky-100 pt-[60px]">
             <div className="max-w-[1200px] mx-auto flex-col lg:flex-row flex py-12 px-8 sm:px-12 items-center gap-4">
                 <div className="flex flex-col gap-6 max-w-[700px]">
                     <h1 className="text-[4rem] font-semibold text-[rgba(9,9,121,1)] ">About Us</h1>

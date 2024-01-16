@@ -24,7 +24,7 @@ function Contact() {
         setFormData({Name:"",email:"",contact:"",query:""});
     }
     return (
-        <div className=' bg-gradient-to-r from-blue-950 to-sky-600 '>
+        <div className=' bg-gradient-to-r from-blue-900 to-sky-600 pt-[60px]'>
             <div className='flex-col items-center md:flex-row flex justify-between  max-w-[1200px] mx-auto px-8 sm:px-12 py-16'>
                 <div className='flex flex-col flex-1 '>
                     <div className='flex flex-col items-start '>
