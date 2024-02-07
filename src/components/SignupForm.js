@@ -35,15 +35,14 @@ export default function SignupForm(props){
             return;
         }
         else{
-            setIsLoggedIn(true);
+            setLoggedIn(true);
             toast.success("Account created.");
             
             const accountData={
-                ...formData,
-                accountType
+                ...formData
             }
             console.log("Printing account data",accountData);
-            navigate("/dashboard");
+            navigate("/");
 
         }
     }
