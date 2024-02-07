@@ -1,5 +1,5 @@
 
-import Footer from '../components/Footer'
+
 import toast from 'react-hot-toast'
 import React from 'react'
 import contact from "../assets/contact.png"
@@ -78,7 +78,7 @@ function Contact() {
                     <img src={contact} alt="contact" className=' md:w-[300px] lg:w-[400px] xl:w-[600px] object-contain' loading='lazy'/>
                 </div>
             </div>
-        <Footer/>
+        
         </div>
     )
 }

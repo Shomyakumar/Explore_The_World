@@ -1,11 +1,18 @@
 import "./Card.css"
-import Button from "./Button";
+import {useNavigate } from 'react-router-dom';
+
 
 export default function Card(props){
     let image=props.data.image;
     let name=props.data.name;
     let info=props.data.info;
+    let id=props.data.id;
     const removeCard=props.removeCard;
+    const navigate=useNavigate();
+
+    function openTour(){
+        navigate(`/tour/${id}`)
+    }
     
     return(
         <div className="flex">
@@ -18,8 +25,19 @@ export default function Card(props){
                     <p className="text-white font-mono text-2xl font-semibold name">{name}</p>
                     <p className="text-sky-200  my-4">{info}</p>
 
-                    <button className="px-10 py-3 text-blue-90 bg-sky-50 text-blue-950 
-                    font-semibold text-lg rounded-md absolute bottom-4 hover:bg-sky-200" >Skip</button>
+                    <div className=" flex gap-4 w-11/12   absolute bottom-4">
+                        <button onClick={()=>{removeCard(id)}}
+                        className=" w-full py-3 text-blue-90 bg-sky-50 text-blue-950 
+                        font-semibold text-lg rounded-md  hover:bg-sky-200" >Skip
+                        </button>
+
+                        
+                        <button onClick={openTour}
+                        className=" w-full py-3 text-blue-90 bg-sky-50 text-blue-950 
+                        font-semibold text-lg rounded-md  hover:bg-sky-200" >Explore
+                        </button>
+                        
+                    </div>
                 </div>
             </div>
             

@@ -6,6 +6,8 @@ import Contact from "./pages/Contact"
 import Navbar from "./components/Navbar"
 import Login from "./pages/Login"
 import Signup from "./pages/Signup"
+import TourDetail from "./pages/TourDetail"
+import Footer from './components/Footer'
 
 function App() {
   const[loggedIn,setLoggedIn]=useState(false);
@@ -14,12 +16,14 @@ function App() {
       <Navbar loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
       <Routes >
         <Route path="/" element={ <Home/> } />
+        <Route path="/tour/:id" element={<TourDetail/>}/>
         <Route path="/about" element={ <About/> } />
         <Route path="/contact" element={ <Contact/> } />
         <Route path="/Explore_The_World" element={ <Home/> } />
         <Route path="/login" element={<Login setLoggedIn={setLoggedIn}/>}/>
         <Route path="/signup" element={<Signup  setLoggedIn={setLoggedIn}/>}/>
       </Routes>
+      <Footer/>
     </div>
   )
 }

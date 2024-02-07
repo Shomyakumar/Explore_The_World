@@ -1,7 +1,7 @@
 import SignupForm from "../components/SignupForm";
 import "../components/Cards.css"
 import signup from "../assets/signup.png"
-import Footer from "../components/Footer"
+
 
 export default function Signup(props){
     const setLoggedIn=props.setLoggedIn;
@@ -22,7 +22,7 @@ export default function Signup(props){
                     
                 </div>
             </div>
-            <Footer/>
+            
         </div>
     )
 }

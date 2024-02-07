@@ -29,10 +29,23 @@ export default function SignupForm(props){
     }
     function submitHandler(event){
         event.preventDefault();
-        setLoggedIn(true);
-        toast.success("Account Created");
-        console.log(formData);
-        navigate("/");
+        if(formData.createPassword!==formData.confirmPassword)
+        {
+            toast.error("Passwords do not match")
+            return;
+        }
+        else{
+            setIsLoggedIn(true);
+            toast.success("Account created.");
+            
+            const accountData={
+                ...formData,
+                accountType
+            }
+            console.log("Printing account data",accountData);
+            navigate("/dashboard");
+
+        }
     }
     const[showPassword1,setShowPassword1]=useState(false);
     const[showPassword2,setShowPassword2]=useState(false);

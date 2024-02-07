@@ -63,7 +63,7 @@ const toursdata={
     ],
     "India":[
         {
-            id:1,
+            id:11,
             name:"Gulmarg",
             image:"https://images.unsplash.com/photo-1637558929744-024c00b06075?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3VsbWFyZ3xlbnwwfHwwfHx8MA%3D%3D",
             info:"Gulmarg in Jammu and Kashmir is a beautiful hill station. It's famous for its pretty meadows, snowy landscapes, and great skiing. The Gulmarg Gondola, a super-high cable car, gives amazing views. You can also do fun things like golfing and trekking while enjoying the lovely scenery.",
@@ -71,13 +71,13 @@ const toursdata={
         },
         
         {
-            id:2,
+            id:12,
             name:"Vrindavan,India",
             info:"Vrindavan is a sacred town located in the Mathura district of the northern Indian state of Uttar Pradesh. It is renowned as a significant pilgrimage destination for followers of Hinduism, particularly devotees of Lord Krishna",
             image:"https://images.unsplash.com/photo-1583134993393-07aa230888f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dnJpbmRhdmFufGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60",
         },
         {
-            id:3,
+            id:13,
             name:"Nainital",
             image:"https://images.unsplash.com/photo-1626014303757-6366ef55c4ab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8TmFpbml0YWx8ZW58MHx8MHx8fDA%3D",
             info:"Nainital, in Uttarakhand, India, is a lovely hill station known for its peaceful Naini Lake and green hills. It has pleasant weather and beautiful spots like the Naina Devi Temple and Governor's House. Enjoy boating, shopping on Mall Road, and exploring Snow View Point.",
@@ -85,7 +85,7 @@ const toursdata={
     
         },
         {
-            id:4,
+            id:14,
             name:"Manali",
             image:"https://images.unsplash.com/photo-1626621331169-5f34be280ed9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8TWFuYWxpfGVufDB8fDB8fHww",
             info:"Manali, in Himachal Pradesh, India, is a beautiful hill station known for stunning landscapes and adventure sports. Rohtang Pass and Solang Valley offer exciting activities like skiing and paragliding. Explore ancient temples, hot springs, and enjoy the charm of Old Manali with its cozy cafes and shops.",
@@ -93,14 +93,14 @@ const toursdata={
     
         },
         {
-            id:5,
+            id:15,
             name:"Auli",
             image:"https://images.unsplash.com/photo-1618661057370-7cf87dfad271?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QXVsaXxlbnwwfHwwfHx8MA%3D%3D",
             info:"Auli in Uttarakhand, India, is a beautiful ski destination surrounded by forests. It's known for well-kept ski slopes and hosts skiing championships. Enjoy a cable car ride, an artificial lake, and the nearby charming town of Joshimath.",
             price:"8000",
         },
         {
-            id:6,
+            id:16,
             name:"Kasol",
             image:"https://images.unsplash.com/photo-1612638039814-1a67ea727114?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8S2Fzb2x8ZW58MHx8MHx8fDA%3D",
             info:"The hill-hamlet of Kasol stands at over 1,580 meters above sea level, in Himachal Pradesh, and flaunts raw natural beauty with lush conifer forests, snow-capped Himalayan mountains and winding rivers.",
@@ -108,38 +108,38 @@ const toursdata={
         },
        
         {
-            id:7,
+            id:17,
             name:"Srinagar",
             image:"https://images.unsplash.com/photo-1614591276564-7b3e69347a48?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3JpbmFnYXJ8ZW58MHx8MHx8fDA%3D",
             info:"Srinagar in Jammu and Kashmir, India, is famous for Dal Lake, houseboats, and beautiful Mughal gardens like Shalimar Bagh. Explore vibrant markets, visit historic places like Jamia Masjid and Shankaracharya Temple. Don't miss the shikara rides on Dal Lake and exploring the floating gardens called `Rad`.",
             price:"8000",
         },
         {
-            id:8,
+            id:18,
             name:"Taj Mahal Agra,India",
             info:"The Taj Mahal, located in Agra, India, is one of the most exquisite and iconic architectural marvels in the world. Built by Mughal Emperor Shah Jahan in the 17th century as a mausoleum for his beloved wife Mumtaz Mahal, it stands as a testament to enduring love and timeless beauty.",
             image:"https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VGFqJTIwTWFoYWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60",
         },
         {
-            id:9,
+            id:19,
             name:"Verkala, Kerela",
             info:"Come and fall in love with the beach vibe of Varkala. You can expect heavy to moderate rainfalls. Varkala is also very popular among relaxation-seekers.",
             image:"https://images.unsplash.com/photo-1587033354790-ca85c78d79af?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHZhcmthbGF8ZW58MHx8MHx8fDA%3D",
         },
         {
-            id:10,
+            id:20,
             name:"Pondicherry",
             info:"If you are a beach lover, you must head to Puducherry. You can expect the city is at its hottest during this time. Puducherry is a hot favourite among foodies too.",
             image:"https://images.unsplash.com/photo-1621831714462-bec8edc4d0ec?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
-            id:11,
+            id:21,
             name:"Goa",
             info:"Rev up your spirits with the stunning adventures of Goa. You can expect heavy rainfall throughout the season, pleasant sea breeze. Humidity tends to be high. You can also sample delicious cuisines at Goa.",
             image:"https://images.unsplash.com/photo-1496566084516-c5b96fcbd5c8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGdvYXxlbnwwfHwwfHx8MA%3D%3D",
         },
         {
-            id:12,
+            id:22,
             name:"Amritsar",
             info:"Soak in the mystic hues of Amritsar, a famous pilgrimage spot! You will love exploring sightseeing attractions and attending various festivals. The local cuisines at Amritsar are worth trying out too.",
             image:"https://plus.unsplash.com/premium_photo-1697730324062-c012bc98eb13?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8QW1yaXRzYXJ8ZW58MHx8MHx8fDA%3D",

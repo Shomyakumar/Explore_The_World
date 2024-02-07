@@ -3,6 +3,8 @@ import { forwardRef } from "react";
 import { useState} from "react";
 import Card from "./Card";
 import "./Cards.css"
+
+
 const Cards=forwardRef((props, refr) => {
 
     const toursdata=props.toursdata;
@@ -27,7 +29,7 @@ const Cards=forwardRef((props, refr) => {
                     <div className="nav-bg h-1 w-[8rem] "></div>
                      <p className="text-2xl text-center font-semibold text-sky-700 hidden  ">Here, we present a curated collection of some of the most enchanting destinations,
                       inviting you to experience the world's wonders. </p>
-                    <p className="text-lg  font-semibold text-[#040A44] text-center">Let the exploration begin!</p>
+                    <p className="text-lg  font-semibold text-[#040A44] text-center">These are the popular destinations in</p>
                 </div>
 
                 <div ref={refr} className="flex items-center justify-center sm:gap-6 gap-4 my-6">

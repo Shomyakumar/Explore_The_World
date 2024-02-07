@@ -1,7 +1,7 @@
 import LoginForm from "../components/LoginForm"
 import "../components/Cards.css"
 import loginimg from "../assets/login.png"
-import Footer from "../components/Footer"
+
 
 export default function Login(props){
     const setLoggedIn=props.setLoggedIn;
@@ -22,7 +22,7 @@ export default function Login(props){
                     
                 </div>
             </div>
-            <Footer/>
+            
         </div>
     )
 }
