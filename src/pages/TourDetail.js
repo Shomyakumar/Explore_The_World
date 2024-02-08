@@ -14,13 +14,13 @@ export default function TourDetail(){
     return(
         <div className="bg-sky-100 ">
             <div className="pt-[140px] pb-[70px] ">
-                <div className="max-w-[1130px] w-11/12 mx-auto px-8 sm:px-12 flex-col flex md:flex-row items-center justify-between gap-8 bg-blue-950 rounded-xl">
+                <div className="max-w-[1130px] w-11/12 mx-auto px-8 sm:px-12 flex-col flex lg:flex-row items-center justify-between  lg:gap-12 bg-blue-950 rounded-xl">
                     {/* left content */}
                     <div className="max-w-[500px] pt-8 lg:pt-0">
                        <img className="w-full max-h-[600px] rounded-md outline outline-offset-1 outline-sky-200" src={tour.image} alt={tour.name} loading="lazy"/>
                     </div>
                     {/* right content */}
-                    <div className="flex-1 py-10 pl-4 ">
+                    <div className="flex-1 py-10 ">
                         <p className="text-4xl pb-4 sm:text-[3rem] leading-[3rem] text-[#ffc738] ">{tour.name}</p>
                         <p className="text-xl text-[#d3effd] ">{tour.description}</p>
                         
